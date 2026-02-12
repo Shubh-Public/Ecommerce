@@ -1,0 +1,36 @@
+{
+  "name": "ecommerce-app",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "E-Commerce Application with React and Vite",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:headed:debug": "playwright test --headed --debug",
+    "test:chromium": "playwright test --project=chromium",
+    "test:chromium:headed": "playwright test --headed --project=chromium",
+    "test:single": "playwright test tests/product-details.spec.ts",
+    "test:single:headed": "playwright test tests/product-listing.spec.ts --headed",
+    "test:single:debug": "playwright test tests/product-listing.spec.ts --debug"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@vitejs/plugin-react": "^4.2.0",
+    "vite": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
